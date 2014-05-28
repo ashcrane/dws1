@@ -10,8 +10,6 @@
 		background-color: #F6FAF6;
 		opacity: 0.95;
 		box-shadow: 0 0 10px 10px #9BBF16;
-		overflow: auto;
-		
 		}
 		
 	body {
@@ -21,11 +19,12 @@
 		margin: 1% auto;
 		background-image: url("../images/sunlight.png");
 		background-repeat: repeat;
+		overflow: auto;
 		}
 	
 	h1 {
 		font-size: 3em;
-		text-align: center;
+		margin:10px auto 10px auto;
 		}
 	
 	h2{
@@ -38,12 +37,12 @@
 		}
 		
 	
-	h1, h2, h3 {
+	header {
 		font-family: "Shadows Into Light", cursive;
 		font-weight: normal;
 		font-style: oblique;
 		color: #28342E;
-		text-align: left;
+		text-align: center;
 		text-shadow: 2px 2px 7px #28342E;
 		}
 		
@@ -52,20 +51,20 @@
 	/* Layout */
 	
 	
-	#column1 {
+	article {
 		width: 60%;
 		float: left;
 		margin: 1%;
 	}
-		#column2 {
+		aside {
 		width: 30%;
 		float: right;
 		margin: 1%;
 		overflow: auto;
 	}
 	
-	#biblio {
-		text-align: right;
+	footer {
+		clear: both;
 		}
 	
 	p {
@@ -101,11 +100,11 @@
 		
 	/* List style */
 		
-	ol {
+	.list {
 		list-style-type: circle;
 		}
 		
-	ol li {
+	.list li {
 		font-size: 1em;
   		margin-left: 1em;
   		line-height: 1.5em;
@@ -114,8 +113,6 @@
 		/* Photo Styles */
 		
 	.images {
-		display: block;
-		height: auto;
 		width: 80%;
 		border: .2em ridge #fff;
 		padding: 20px;
@@ -129,40 +126,17 @@
 		}
 		
 		
-		
-	#image1  {
-		width: 59%;
-		height: 1%;
-		border: .2em solid #000;
-		padding: .5%;
-		margin-bottom:5%;
-		}
-		
-	#image2 {
-		width: 79%;
-		height: 10%;
-		border: .2em solid #000;
-		margin-bottom: 15%;
-		padding: .5%;
-		}
-		
-	#image3 {
-		width: 79%;
-		height: 10%;
-		border: .2em solid #000;
-		padding: .5%;
-		margin-bottom: 15% ;
-		}
-		
-	#image4 {
-		width: 52%;
-		height: 10%;
-		border: .2em solid #000;
+	
+	img {
+		width:200px;
+		height:175px;
 		display: block;
-		padding: 1%;
-		margin-bottom: 10%;
+		border: 1px solid #F6FAF6;
 		}
 		
+	img:hover {
+		border-color: #009913;
+		}
 	
 
 	a:hover {
